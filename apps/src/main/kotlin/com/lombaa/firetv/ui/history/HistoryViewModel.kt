@@ -1,35 +1,27 @@
 package com.lombaa.firetv.ui.history
 
-import android.app.Application
-import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.lombaa.firetv.base.asMutable
+import com.lombaa.firetv.base.extension.DATE_FORMAT
+import com.lombaa.firetv.base.extension.print
+import com.lombaa.firetv.data.QuotesRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
 internal class HistoryViewModel @Inject constructor(
-  application: Application,
-) : AndroidViewModel(application) {
-  val histories: LiveData<List<HistoryItem>> = MutableLiveData()
+    private val quotesRepository: QuotesRepository
+) : ViewModel() {
+    val histories: LiveData<List<HistoryItem>> = MutableLiveData()
 
-  init {
-    viewModelScope.launch {
-      val historyItems = mutableListOf<HistoryItem>()
-      historyItems.add(HistoryItem("History 1"))
-      historyItems.add(HistoryItem("History 2"))
-      historyItems.add(HistoryItem("History 3"))
-      historyItems.add(HistoryItem("History 4"))
-      historyItems.add(HistoryItem("History 5"))
-      historyItems.add(HistoryItem("History 6"))
-      historyItems.add(HistoryItem("History 7"))
-      historyItems.add(HistoryItem("History 7"))
-      historyItems.add(HistoryItem("History 8"))
-      historyItems.add(HistoryItem("History 9"))
-      histories.asMutable().value = historyItems;
+    init {
+        viewModelScope.launch {
+            val historyItems = quotesRepository.getHistory().map { HistoryItem(it.text + "\n" + it.dateTime.print(DATE_FORMAT)) }
+            histories.asMutable().value = historyItems
+        }
     }
-  }
 }
