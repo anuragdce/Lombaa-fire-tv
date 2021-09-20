@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="Tiny.Regular">
+    <item name="fontFamily">@font/montserrat_regular</item>
+  </style>
+
+  <style name="Small.Regular">
+    <item name="fontFamily">@font/montserrat_regular</item>
+  </style>
+
+  <style name="Normal.Regular">
+    <item name="fontFamily">@font/montserrat_regular</item>
+  </style>
+
+  <style name="Large.Regular">
+    <item name="fontFamily">@font/montserrat_regular</item>
+  </style>
+  <!-- ################## Large Regular  #####################-->
+  <style name="Large.Regular.Black">
+    <item name="android:textColor">@color/black</item>
+  </style>
+
+  <style name="Large.Regular.Red">
+    <item name="android:textColor">@color/red</item>
+  </style>
+
+  <style name="Large.Regular.Grey">
+    <item name="android:textColor">@color/grey</item>
+  </style>
+
+  <style name="Large.Regular.Link">
+    <item name="android:textColor">@color/link</item>
+  </style>
+
+  <style name="Large.Regular.White">
+    <item name="android:textColor">@color/white</item>
+  </style>
+  <!-- ################## Large Regular  #####################-->
+  <!-- ################## Normal Regular #####################-->
+  <style name="Normal.Regular.Black">
+    <item name="android:textColor">@color/black</item>
+  </style>
+
+  <style name="Normal.Regular.Grey">
+    <item name="android:textColor">@color/grey</item>
+  </style>
+
+  <style name="Normal.Regular.Link">
+    <item name="android:textColor">@color/link</item>
+  </style>
+
+  <style name="Normal.Regular.White">
+    <item name="android:textColor">@color/white</item>
+  </style>
+
+  <style name="Normal.Regular.LightBlue">
+    <item name="android:textColor">@color/tutorial_desc</item>
+  </style>
+
+  <!-- ################## Normal Regular #####################-->
+  <!-- ################## Tiny Regular #####################-->
+  <style name="Tiny.Regular.Black">
+    <item name="android:textColor">@color/black</item>
+  </style>
+
+  <style name="Tiny.Regular.Grey">
+    <item name="android:textColor">@color/grey</item>
+  </style>
+
+  <style name="Tiny.Regular.Link">
+    <item name="android:textColor">@color/link</item>
+  </style>
+
+  <style name="Tiny.Regular.White">
+    <item name="android:textColor">@color/white</item>
+  </style>
+  <!-- ##################  Tiny Regular  #####################-->
+  <!-- ##################  Small Regular  #####################-->
+  <style name="Small.Regular.Black">
+    <item name="android:textColor">@color/black</item>
+  </style>
+
+  <style name="Small.Regular.Grey">
+    <item name="android:textColor">@color/grey</item>
+  </style>
+
+  <style name="Small.Regular.Slightly_Blue">
+    <item name="android:textColor">@color/slightly_blue</item>
+  </style>
+
+  <style name="Small.Regular.Link">
+    <item name="android:textColor">@color/link</item>
+  </style>
+
+  <style name="Small.Regular.White">
+    <item name="android:textColor">@color/white</item>
+  </style>
+  <!-- ################## Small Regular  #####################-->
+</resources>

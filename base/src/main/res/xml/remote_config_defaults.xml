@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>urls</key>
+        <value>{"blog":"https://www.iscapeit.com/blog","blog_rss":"https://www.iscapeit.com/blog/rss.xml","help":"https://knowledge.iscapeit.com/","contactUs":"https://www.iscapeit.com/contact-us"}</value>
+    </entry>
+
+    <entry>
+        <key>home</key>
+        <value>{"banner_fgt_visible":false,"banner_fgt_title":"Thousands of Trees, Delivered with Care, Directly to your Home.","banner_fgt_url":"http://www.anrdoezrs.net/click-8878383-13569462","banner_tb_visible":false,"banner_tb_title":"EXPLORE EXPERT IDEAS TO LAY\nTHE GROUNDWORK FOR YOUR\nDREAM PROJECT.","banner_tb_url":"https://www.techo-bloc.com/?utm_source=App&amp;utm_medium=Iscape&amp;utm_campaign=Iscape_hp","banner_burpee_url":"https://www.burpeehomegardens.com/FindAStore/","banner_burpee_visible":false,"banner_hireapro_visible":false,"banner_hireapro_title":"Hire a Pro Designer","banner_hireapro_description":"iScape Design Help Now Available","banner_hireapro_url":"https://www.iscapeit.com/pro-designers","show_upgrade_wall_on_launch":true}</value>
+    </entry>
+
+    <entry>
+        <key>editor_tutorial</key>
+        <value>{"urls":{"startingyourproject":"https://www.youtube.com/watch?v=u_nPtVEpqFA","additems":"https://www.youtube.com/watch?v=XkvXtl7PZ8w","texturetool":"https://www.youtube.com/watch?v=j0DuuJq5KBo","selectiontools":null,"delete":null,"duplicate":null,"cutoutclone":null,"flip":null,"arrangelayers":null,"coloradjuster":null}}</value>
+    </entry>
+
+    <entry>
+        <key>android_upgradewall</key>
+        <value>{"title":"Unlock iScape Pro","version":"v1","benefits":[{"title":"iScape Pro Database","subtitle":"Unlimited access to thousands of iScape images with new images added weekly."},{"title":"Design without Limits","subtitle":"Unlimited designs and favorites accessible across multiple devices."},{"title":"Project Proposals","subtitle":"Export Project proposals &amp; plant list straight from your design."},{"title":"Image Uploads","subtitle":"Customize your designs even further with personalized image uploads."},{"title":"iScape Tools","subtitle":"Powerful Editing Tools for\nNext-Level Realism."}],"plans":[{"visible":true,"tag":{"visible":false,"text":""},"title":"Pro Monthly","productIdentifier":"com.iscape.subscription.v0.monthly","introAvailable":{"topText":"Try {introQuantity} {introUnitAbbreviated} for free. Then {originalPrice}/{originalUnit}","buttonTitle":"Continue","bottomText":"No commitment. Cancel anytime.","showTotal":false},"introUnavailable":{"topText":"{originalPrice} / {originalUnit}","buttonTitle":"Continue","bottomText":"No commitment. Cancel anytime.","showTotal":false}},{"visible":true,"tag":{"visible":false,"text":""},"title":"Pro Yearly","productIdentifier":"com.iscape.subscription.v0.yearly","introAvailable":{"topText":"Try {introQuantity} {introUnitAbbreviated} for free. Then {originalPrice}/{originalUnit}","buttonTitle":"Continue","bottomText":"No commitment. Cancel anytime.","showTotal":false},"introUnavailable":{"topText":"{originalPrice} / {originalUnit}","buttonTitle":"Continue","bottomText":"No commitment. Cancel anytime.","showTotal":false}}]}</value>
+    </entry>
+</defaultsMap><!-- END xml_defaults -->

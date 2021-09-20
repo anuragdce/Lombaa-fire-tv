@@ -1,0 +1,26 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/transparent"
+            app:lazyloader_animDur="500"
+            app:lazyloader_dotsDist="@dimen/_5sdp"
+            app:lazyloader_dotsRadius="@dimen/_8sdp"
+            app:lazyloader_firstDelayDur="150"
+            app:lazyloader_firstDotColor="@color/dots"
+            app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+            app:lazyloader_secondDelayDur="300"
+            app:lazyloader_secondDotColor="@color/dots"
+            app:lazyloader_thirdDotColor="@color/dots" />
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LombaaFireTV</string>
+    <string name="projects_title">Projects</string>
+    <string name="settings_title">Settings</string>
+</resources>
