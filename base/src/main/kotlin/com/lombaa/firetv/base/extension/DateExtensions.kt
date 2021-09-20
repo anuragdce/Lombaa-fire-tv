@@ -8,16 +8,25 @@ import java.util.*
 const val DATE_FORMAT = "MM-dd-yyyy"
 
 fun Date.print(format: String): String {
-  val dateFormat = DateTimeFormat.forPattern(format)
-  return dateFormat.print(time)
+    val dateFormat = DateTimeFormat.forPattern(format)
+    return dateFormat.print(time)
 }
 
 fun DateTime.print(format: String): String {
-  val dateFormat = DateTimeFormat.forPattern(format)
-  return dateFormat.print(this)
+    val dateFormat = DateTimeFormat.forPattern(format)
+    return dateFormat.print(this)
+}
+
+fun String.toDateTime(format: String): DateTime {
+    val dateFormat = DateTimeFormat.forPattern(format)
+    return dateFormat.parseDateTime(this)
 }
 
 fun currentDate(): Date {
-  return DateTime.now(DateTimeZone.UTC).toDate()
+    return DateTime.now(DateTimeZone.UTC).toDate()
+}
+
+fun currentDateTime(): DateTime {
+    return DateTime.now(DateTimeZone.UTC)
 }
 
