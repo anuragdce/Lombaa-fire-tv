@@ -10,8 +10,9 @@
   </data>
 
   <androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
+    android:layout_width="@dimen/_200sdp"
     android:layout_height="match_parent"
+    android:background="@color/black_transparent"
     android:padding="@dimen/_10ssp">
 
     <androidx.appcompat.widget.AppCompatButton

@@ -2,7 +2,6 @@ package com.lombaa.firetv.ui
 
 import android.os.Bundle
 import android.view.KeyEvent
-import android.view.KeyEvent.KEYCODE_DPAD_LEFT
 import android.view.KeyEvent.KEYCODE_MENU
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
@@ -22,7 +21,7 @@ internal class MainActivity : AppCompatActivity() {
     override fun dispatchKeyEvent(event: KeyEvent?): Boolean {
         if (event != null) {
             when (event.keyCode) {
-                KEYCODE_MENU, KEYCODE_DPAD_LEFT -> {
+                KEYCODE_MENU, KeyEvent.KEYCODE_DPAD_RIGHT -> {
                     drawerLayout.open()
                     return true
                 }
