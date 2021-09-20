@@ -36,6 +36,7 @@
                 android:name="androidx.navigation.fragment.NavHostFragment"
                 android:layout_width="@dimen/_200sdp"
                 android:layout_height="0dp"
+                android:layout_gravity="start"
                 android:background="@color/black_transparent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"

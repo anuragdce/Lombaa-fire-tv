@@ -9,13 +9,13 @@ import javax.inject.Inject
 
 @HiltViewModel
 internal class MenuViewModel @Inject constructor(
-  application: Application,
+    application: Application,
 ) : AndroidViewModel(application) {
 
 
-  init {
-    viewModelScope.launch {
+    init {
+        viewModelScope.launch {
 
+        }
     }
-  }
 }
