@@ -1,29 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+  xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/white">
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            style="@style/Normal.Regular.Black"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/_24sdp"
-            android:text="@{viewModel.quote}"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/header"
+      style="@style/Large.Regular.White"
+      android:layout_width="0dp"
+      android:layout_height="60dp"
+      android:background="@color/colorPrimary"
+      android:gravity="center_vertical"
+      android:paddingStart="@dimen/_24sdp"
+      android:text="@string/home"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <data>
+    <androidx.appcompat.widget.AppCompatTextView
+      style="@style/Normal.Regular.Black"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/_24sdp"
+      android:text="@{viewModel.quote}"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/header" />
 
-        <variable
-            name="viewModel"
-            type="com.lombaa.firetv.ui.home.HomeViewModel" />
-    </data>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.lombaa.firetv.ui.home.HomeViewModel" />
+  </data>
 </layout>

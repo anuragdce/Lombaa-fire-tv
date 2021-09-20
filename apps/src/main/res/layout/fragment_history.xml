@@ -14,6 +14,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <androidx.appcompat.widget.AppCompatTextView
+      android:id="@+id/header"
+      style="@style/Large.Regular.White"
+      android:layout_width="0dp"
+      android:layout_height="60dp"
+      android:background="@color/colorPrimary"
+      android:gravity="center_vertical"
+      android:paddingStart="@dimen/_24sdp"
+      android:text="@string/history"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
     <androidx.recyclerview.widget.RecyclerView
       android:id="@+id/list"
       histories="@{viewModel.histories}"
@@ -25,7 +39,7 @@
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/header"
       tools:listitem="@layout/item_hisorty" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
