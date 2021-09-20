@@ -68,5 +68,8 @@ dependencies {
 
   implementation(Deps.JODA)
 
+  implementation(Deps.Sdp.ANDROID)
+  implementation(Deps.Ssp.ANDROID)
+
   androidTestImplementation(Deps.AndroidX.Test.ESPRESSO_CORE)
 }
