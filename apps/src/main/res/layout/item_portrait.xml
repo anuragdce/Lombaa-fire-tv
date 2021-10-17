@@ -6,7 +6,7 @@
 
         <variable
             name="item"
-            type="com.lombaa.firetv.data.local.model.Movie" />
+            type="com.freemovies.firetv.data.local.model.Movie" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -20,7 +20,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <com.lombaa.firetv.ui.widget.CrackleImageView
+            <com.freemovies.firetv.ui.widget.CrackleImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="center"

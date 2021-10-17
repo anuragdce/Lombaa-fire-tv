@@ -20,6 +20,6 @@
 
         <variable
             name="viewModel"
-            type="com.lombaa.firetv.ui.splash.SplashViewModel" />
+            type="com.freemovies.firetv.ui.splash.SplashViewModel" />
     </data>
 </layout>

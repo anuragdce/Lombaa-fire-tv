@@ -6,7 +6,7 @@
 
         <variable
             name="item"
-            type="com.lombaa.firetv.data.local.model.PlayList" />
+            type="com.freemovies.firetv.data.local.model.PlayList" />
     </data>
 
     <LinearLayout
@@ -19,7 +19,7 @@
             android:text="@{item.title}"
             tools:text="@tools:sample/lorem" />
 
-        <com.lombaa.firetv.ui.widget.TvHorizontalRv
+        <com.freemovies.firetv.ui.widget.TvHorizontalRv
             android:id="@+id/rv"
             style="@style/Carousel.Portrait.Rv"
             tools:itemCount="3"

@@ -20,7 +20,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.lombaa.firetv.ui.widget.TvVerticalRv
+        <com.freemovies.firetv.ui.widget.TvVerticalRv
             android:id="@+id/rv"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -42,6 +42,6 @@
 
         <variable
             name="viewModel"
-            type="com.lombaa.firetv.ui.home.HomeViewModel" />
+            type="com.freemovies.firetv.ui.home.HomeViewModel" />
     </data>
 </layout>

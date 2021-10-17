@@ -11,7 +11,7 @@ applyCommonConfig()
 
 android {
   defaultConfig {
-    applicationId = "com.lombaa.firetv"
+    applicationId = "com.freemovies.firetv"
     versionCode = 1
     versionName = "1.0"
   }

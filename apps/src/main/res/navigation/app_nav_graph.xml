@@ -19,17 +19,17 @@
 
     <fragment
         android:id="@+id/home_fragment"
-        android:name="com.lombaa.firetv.ui.home.HomeFragment"
+        android:name="com.freemovies.firetv.ui.home.HomeFragment"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/splash_fragment"
-        android:name="com.lombaa.firetv.ui.splash.SplashFragment"
+        android:name="com.freemovies.firetv.ui.splash.SplashFragment"
         tools:layout="@layout/fragment_splash" />
 
     <fragment
         android:id="@+id/detail_fragment"
-        android:name="com.lombaa.firetv.ui.details.DetailFragment"
+        android:name="com.freemovies.firetv.ui.details.DetailFragment"
         tools:layout="@layout/fragment_detail">
 
         <argument

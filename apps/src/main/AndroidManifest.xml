@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.lombaa.firetv">
+    package="com.freemovies.firetv">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
-        android:name="com.lombaa.firetv.app.LombaaApplication"
+        android:name="com.freemovies.firetv.app.LombaaApplication"
         android:icon="@mipmap/ic_launcher"
+        android:banner="@drawable/banner"
         android:label="@string/app_name"
         android:usesCleartextTraffic="true"
         android:requestLegacyExternalStorage="true"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -31,7 +31,7 @@
             android:exported="false"
             tools:node="merge">
             <meta-data
-                android:name="com.lombaa.firetv.startup.AppInitializer"
+                android:name="com.freemovies.firetv.startup.AppInitializer"
                 android:value="androidx.startup" />
         </provider>
     </application>
