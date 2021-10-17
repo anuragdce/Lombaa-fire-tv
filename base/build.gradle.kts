@@ -50,4 +50,5 @@ dependencies {
 
     implementation(Deps.JODA)
     implementation(Deps.LOADER)
+    implementation(Deps.LEANBACK)
 }

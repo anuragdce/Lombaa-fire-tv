@@ -5,6 +5,7 @@ import androidx.navigation.fragment.navArgs
 import com.lombaa.firetv.R
 import com.lombaa.firetv.base.ui.DataBindingFragment
 import com.lombaa.firetv.databinding.FragmentDetailBinding
+import com.lombaa.firetv.ui.player.PlaybackActivity
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -16,5 +17,11 @@ internal class DetailFragment :
     override fun onBindView(binding: FragmentDetailBinding) {
         binding.viewModel = viewModel
         viewModel.loadDetails(args.movieId)
+        binding.btnPlay.requestFocus()
+        binding.btnPlay.setOnClickListener {
+            activity?.let {
+                startActivity(PlaybackActivity.createIntent(it, args.movieId))
+            }
+        }
     }
 }

@@ -50,6 +50,9 @@ dependencies {
   implementation(Deps.AndroidX.Room.KTX)
   kapt(Deps.AndroidX.Room.COMPILER)
 
+  implementation(Deps.ExoPlayer.CORE)
+  implementation(Deps.ExoPlayer.LEANBACK)
+
   implementation(Deps.Firebase.CRASHLYTICS)
 
   implementation(Deps.FondesaPermissions.CORE)
@@ -58,6 +61,7 @@ dependencies {
   implementation(Deps.Hilt.ANDROID)
   kapt(Deps.Hilt.ANDROID_COMPILER)
   kapt(Deps.AndroidX.Hilt.COMPILER)
+
 
   implementation(Deps.JacksonCore.ANNOTATION)
   implementation(Deps.JacksonCore.CORE)

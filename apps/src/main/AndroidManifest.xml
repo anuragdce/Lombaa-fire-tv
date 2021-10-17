@@ -23,6 +23,8 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".ui.player.PlaybackActivity" />
+
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="${applicationId}.androidx-startup"

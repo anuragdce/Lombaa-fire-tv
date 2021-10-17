@@ -65,6 +65,11 @@ object Deps : BaseDep() {
     val LIFECYCLE = dep(name = "lifecycle")
   }
 
+  object ExoPlayer : BaseDep("com.google.android.exoplayer", "2.15.1") {
+    val CORE = dep(name = "exoplayer")
+    val LEANBACK = dep(name = "extension-leanback")
+  }
+
   object Firebase : BaseDep("com.google.firebase") {
     val BOM = dep(name = "firebase-bom", version = "26.5.0")
     val CRASHLYTICS = dep(name = "firebase-crashlytics")
