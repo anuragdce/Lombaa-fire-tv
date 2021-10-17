@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.lombaa.firetv.data.local.model.PlayList" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:orientation="vertical"
+        style="@style/Carousel.Portrait.Root">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/Carousel.Title"
+            android:text="@{item.title}"
+            tools:text="@tools:sample/lorem" />
+
+        <com.lombaa.firetv.ui.widget.TvHorizontalRv
+            android:id="@+id/rv"
+            style="@style/Carousel.Portrait.Rv"
+            tools:itemCount="3"
+            tools:listitem="@layout/item_portrait" />
+    </LinearLayout>
+</layout>

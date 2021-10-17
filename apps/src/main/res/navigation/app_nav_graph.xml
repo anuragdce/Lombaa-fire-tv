@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/home_fragment">
+    app:startDestination="@id/splash_fragment">
 
     <action
         android:id="@+id/action_to_HomeFragment"
@@ -12,14 +12,8 @@
         app:exitAnim="@android:anim/fade_out" />
 
     <action
-        android:id="@+id/action_to_HistoryFragment"
-        app:destination="@id/history_fragment"
-        app:enterAnim="@android:anim/fade_in"
-        app:exitAnim="@android:anim/fade_out" />
-
-    <action
-        android:id="@+id/action_to_ContactFragment"
-        app:destination="@id/contact_fragment"
+        android:id="@+id/action_to_DetailFragment"
+        app:destination="@id/detail_fragment"
         app:enterAnim="@android:anim/fade_in"
         app:exitAnim="@android:anim/fade_out" />
 
@@ -29,13 +23,19 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/history_fragment"
-        android:name="com.lombaa.firetv.ui.history.HistoryFragment"
-        tools:layout="@layout/fragment_history" />
+        android:id="@+id/splash_fragment"
+        android:name="com.lombaa.firetv.ui.splash.SplashFragment"
+        tools:layout="@layout/fragment_splash" />
 
     <fragment
-        android:id="@+id/contact_fragment"
-        android:name="com.lombaa.firetv.ui.contact.ContactFragment"
-        tools:layout="@layout/fragment_contact" />
+        android:id="@+id/detail_fragment"
+        android:name="com.lombaa.firetv.ui.details.DetailFragment"
+        tools:layout="@layout/fragment_detail">
+
+        <argument
+            android:name="movieId"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
 
 </navigation>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Text" parent="NotFocusable">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Text.Regular">
+        <item name="android:fontFamily">@font/sora_regular</item>
+    </style>
+
+    <style name="Text.Regular.10">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Text.Regular.9">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="Text.Regular.12">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text.Regular.18">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Text.Bold">
+        <item name="android:fontFamily">@font/sora_bold</item>
+    </style>
+
+    <style name="Text.Bold.9">
+        <item name="android:textSize">9sp</item>
+    </style>
+
+    <style name="Text.Bold.10">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Text.Bold.12">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text.Bold.36">
+        <item name="android:textSize">36sp</item>
+    </style>
+</resources>

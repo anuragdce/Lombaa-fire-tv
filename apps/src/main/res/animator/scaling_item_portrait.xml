@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <set>
+            <objectAnimator
+                android:duration="@integer/anim_duration_def"
+                android:propertyName="scaleX"
+                android:valueTo="@integer/scaling_item_portrait_x"
+                android:valueType="floatType" />
+
+            <objectAnimator
+                android:duration="@integer/anim_duration_def"
+                android:propertyName="scaleY"
+                android:valueTo="@integer/scaling_item_portrait_y"
+                android:valueType="floatType" />
+        </set>
+    </item>
+
+    <item android:state_focused="false">
+        <set>
+            <objectAnimator
+                android:duration="@integer/anim_duration_def"
+                android:propertyName="scaleX"
+                android:valueTo="@integer/scaling_item_portrait_x_default"
+                android:valueType="floatType" />
+
+            <objectAnimator
+                android:duration="@integer/anim_duration_def"
+                android:propertyName="scaleY"
+                android:valueTo="@integer/scaling_item_portrait_y_default"
+                android:valueType="floatType" />
+        </set>
+    </item>
+</selector>

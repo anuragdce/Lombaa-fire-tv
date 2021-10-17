@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--region portrait-->
+    <style name="Item.Portrait.Root" parent="Focusable">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clipChildren">false</item>
+    </style>
+
+    <style name="Item.Portrait.Card" parent="NotFocusable">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_marginBottom">@dimen/content_margin_inner</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="cardCornerRadius">@dimen/corner_radius_4</item>
+        <item name="layout_constraintDimensionRatio">420:240</item>
+        <item name="android:scaleX">@integer/scaling_item_portrait_x_default</item>
+        <item name="android:scaleY">@integer/scaling_item_portrait_y_default</item>
+        <item name="android:stateListAnimator">@animator/scaling_item_portrait</item>
+    </style>
+
+    <style name="Item.Image.Loading.Failed.Title" parent="Text.Regular.18">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:duplicateParentState">true</item>
+    </style>
+
+
+</resources>

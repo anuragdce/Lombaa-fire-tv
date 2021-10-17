@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="scaling_item_landscape_x_default" format="float" type="integer">1</item>
+    <item name="scaling_item_landscape_y_default" format="float" type="integer">1</item>
+    <item name="scaling_item_landscape_x" format="float" type="integer">1.04</item>
+    <item name="scaling_item_landscape_y" format="float" type="integer">1.04</item>
+
+    <item name="scaling_item_portrait_x_default" format="float" type="integer">1</item>
+    <item name="scaling_item_portrait_y_default" format="float" type="integer">1</item>
+    <item name="scaling_item_portrait_x" format="float" type="integer">1.06</item>
+    <item name="scaling_item_portrait_y" format="float" type="integer">1.06</item>
+
+    <item name="scaling_item_original_x_default" format="float" type="integer">1</item>
+    <item name="scaling_item_original_y_default" format="float" type="integer">1</item>
+    <item name="scaling_item_original_x" format="float" type="integer">1.03</item>
+    <item name="scaling_item_original_y" format="float" type="integer">1.03</item>
+</resources>

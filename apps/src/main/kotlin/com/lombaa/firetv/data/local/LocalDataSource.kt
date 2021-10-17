@@ -1,19 +1,21 @@
 package com.lombaa.firetv.data.local
 
 import androidx.annotation.WorkerThread
-import com.lombaa.firetv.data.local.model.Quote
-import org.joda.time.DateTime
+import com.lombaa.firetv.data.local.model.Movie
 
 interface LocalDataSource {
     @WorkerThread
-    suspend fun save(quote: Quote)
+    suspend fun save(movie: Movie)
 
     @WorkerThread
-    suspend fun getQuote(dateTime: DateTime): Quote?
+    suspend fun save(movies: List<Movie>)
 
     @WorkerThread
-    suspend fun getHistory(): List<Quote>
+    suspend fun getMovies(tag: String): List<Movie>
 
     @WorkerThread
-    suspend fun getLatestQuote(): Quote?
+    suspend fun getMovies(): List<Movie>
+
+    @WorkerThread
+    suspend fun getMovie(id: String): Movie?
 }

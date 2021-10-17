@@ -64,9 +64,19 @@ dependencies {
   implementation(Deps.JacksonCore.DATABIND)
   implementation(Deps.Jackson.KOTLIN)
 
+  implementation(Deps.OkHttp3.OKHTTP)
+  implementation(Deps.OkHttp3.OKHTTP_LOGGER)
+
+  implementation(Deps.Retrofit.RETROFIT)
+  implementation(Deps.Retrofit.JACKSON)
+
   implementation(Deps.Kotlin.STDLIB)
 
   implementation(Deps.JODA)
+  implementation(Deps.LEANBACK)
+
+  implementation(Deps.Glide.CORE)
+  kapt(Deps.Glide.COMPILER)
 
   implementation(Deps.Sdp.ANDROID)
   implementation(Deps.Ssp.ANDROID)

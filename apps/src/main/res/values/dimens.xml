@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="carousel_item_spacing">@dimen/_12sdp</dimen>
+    <dimen name="content_margin_inner">12dp</dimen>
+    <dimen name="content_margin_horizontal_with_menu">88dp</dimen>
+    <dimen name="carousel_height_portrait">256dp</dimen>
+
+    <integer name="anim_duration_def">200</integer>
+    <dimen name="corner_radius_2">2dp</dimen>
+    <dimen name="corner_radius_4">4dp</dimen>
+    <dimen name="corner_radius_8">8dp</dimen>
+    <dimen name="dash_width">1dp</dimen>
+    <dimen name="image_load_failed_text_margin">10dp</dimen>
+
+</resources>

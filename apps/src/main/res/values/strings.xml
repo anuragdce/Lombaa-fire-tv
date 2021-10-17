@@ -8,5 +8,6 @@
   <string name="address">Address:</string>
   <string name="phone_number">Phone Number:</string>
   <string name="email_id">Email Id:</string>
+  <string name="recent_movies">Recent Movies</string>
 
 </resources>

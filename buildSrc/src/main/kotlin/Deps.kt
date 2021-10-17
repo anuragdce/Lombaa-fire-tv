@@ -8,6 +8,8 @@ object Deps : BaseDep() {
 
   val SMART_LOCATION = "io.nlopez.smartlocation:library" version "3.3.3"
 
+  val LEANBACK = "androidx.leanback:leanback" version "1.0.0"
+
   object Android : BaseDep("com.google.android") {
     val LOCATION = dep("gms:play-services-location", "18.0.0")
     val MAP = dep("gms:play-services-maps", "17.0.1")
@@ -19,8 +21,8 @@ object Deps : BaseDep() {
   }
 
   object AndroidX : BaseDep("androidx") {
-    val APPCOMPAT = dep("appcompat:appcompat", "1.3.0")
-    val CONSTRAINTLAYOUT = dep("constraintlayout:constraintlayout", "2.0.4")
+    val APPCOMPAT = dep("appcompat:appcompat", "1.3.1")
+    val CONSTRAINTLAYOUT = dep("constraintlayout:constraintlayout", "2.1.1")
     val CORE_KTX = dep("core:core-ktx", "1.5.0")
     val EXIFINTERFACE = dep("exifinterface:exifinterface", "1.3.2")
     val FRAGMENT_KTX = dep("fragment:fragment-ktx", "1.4.0-alpha01")
@@ -97,9 +99,24 @@ object Deps : BaseDep() {
     val KOTLIN = dep(name = "jackson-module-kotlin")
   }
 
+  object OkHttp3 : BaseDep("com.squareup.okhttp3", "4.9.1") {
+    val OKHTTP = dep(name = "okhttp")
+    val OKHTTP_LOGGER = dep(name = "logging-interceptor")
+  }
+
+  object Retrofit : BaseDep("com.squareup.retrofit2", "2.9.0") {
+    val RETROFIT = dep(name = "retrofit")
+    val JACKSON = dep(name = "converter-jackson")
+  }
+
   object FondesaPermissions : BaseDep("com.github.fondesa", "3.2.1") {
     val CORE = dep(name = "kpermissions")
     val COROUTINES = dep(name = "kpermissions-coroutines")
+  }
+
+  object Glide : BaseDep("com.github.bumptech.glide" ,"4.12.0") {
+    val CORE = dep(name = "glide")
+    val COMPILER = dep(name = "compiler")
   }
 
   object Sdp : BaseDep("com.intuit.sdp", "1.0.6") {
